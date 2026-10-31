@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  background: #f6f7fb;
+  color: #0f172a;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.page {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 100%;
+  max-width: 466px;
+  padding: 20px 22px 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  margin: 0 0 12px;
+  text-align: center;
+  font-size: 44px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+input {
+  height: 38px;
+  padding: 0 12px;
+  font-size: 15px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.error {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: #dc2626;
+}
+
+button {
+  width: 100%;
+  height: 42px;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 32px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+    padding: 16px 14px 20px;
   }
 }
